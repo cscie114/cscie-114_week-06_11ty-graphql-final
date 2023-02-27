@@ -10,5 +10,9 @@ layout: base
 tags: filmPages
 ---
 
-{% assign films = films.data.allFilms.films %}
 <h2>{{ film.title }}</h2>
+
+{% render '_includes/objectList.liquid', listName: 'Characters', objList: film.characterConnection.characters %}
+{% render '_includes/objectList.liquid', listName: 'Planets', objList: film.planetConnection.planets %}
+{% render '_includes/objectList.liquid', listName: 'Starships', objList: film.starhipConnection.starships %}
+{% render '_includes/objectList.liquid', listName: 'Vehicles', objList: film.vehicleConnection.vehicles %}
