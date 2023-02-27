@@ -1,0 +1,14 @@
+---
+pagination:
+    data: films.data.allFilms.films
+    size: 1
+    alias: film
+    addAllPagesToCollections: true
+permalink: "films/starwars-ep_{{ film.episodeID | slugify }}/"
+title: {{ film.title }}
+layout: base
+tags: filmPages
+---
+
+{% assign films = films.data.allFilms.films %}
+<h2>{{ film.title }}</h2>
