@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/main.css">
+    <script src="/assets/scripts/dataBoard.js"></script>
     <title>{{ title }}</title>
   </head>
   <body>
     <header>
-      <h1>11ty & GraphQL Example</h1>
+      <div id="starWarsLogo">
+        <img src="/assets/images/logo-starwars.png" alt="Star Wars">
+      </div>
+      <div id="cscie114Logos">
+        <img src="/assets/images/dce-shield.png" alt="Harvard Extension School">
+        <img src="/assets/images/jamstack_icon_color_transparent.png" alt="Jamstack">
+      </div>
     </header>
     <main>
       {{ content }}

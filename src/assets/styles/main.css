@@ -1,5 +1,74 @@
+/*========
+// Styles for index AND individual movie pages.
+==========*/
 body {
     background-color: black;
     color: gold;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: thin solid gold;
+    border-top: thin solid gold;
+    padding: 5px 0 5px 0;
+}
+
+header div {
+    height: 50px;
+}
+
+header div:last-child {
+    text-align: right;
+}
+
+header img {
+    max-height: 100%;
+}
+
+footer {
+    border-top: thin solid gold;
+    font-size: 0.85rem;
+}
+
+/*=========
+// Styles specific to the individual movie pages.
+===========*/
+#dashboard {
+    display: grid;
+    grid-template-areas:
+        "swImg mInfo"
+        "swImg mData";
+    grid-template-columns: 25% 75%;
+    background-color: grey;
+    border-radius: 0.25rem;
+}
+
+#dashboard div {
+    background-color: white;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    color: black;
+}
+
+#dashboard div#moviePoster {
+    grid-area: swImg;
+    text-align: center;
+}
+
+#dashboard div#infoBoard {
+    grid-area: mInfo;
+}
+
+#dashboard div#dataBoard {
+    grid-area: mData;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#dataBoard #Characters {
+    display: block;
+}
+
