@@ -11,6 +11,13 @@ tags: filmPages
 ---
 
 <h2>{{ film.title }}</h2>
+<p>
+  {{ film.plot }}
+</p>
+
+<p>
+  <img src="{{ film.poster }}" alt="{{ film.title }}">
+</p>
 
 {% render '_includes/objectList.liquid', listName: 'Characters', objList: film.characterConnection.characters %}
 {% render '_includes/objectList.liquid', listName: 'Planets', objList: film.planetConnection.planets %}
