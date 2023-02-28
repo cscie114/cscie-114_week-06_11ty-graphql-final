@@ -1,10 +1,18 @@
 /*========
 // Styles for index AND individual movie pages.
 ==========*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: black;
     color: gold;
     font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 0.5rem auto;
+
 }
 
 header {
@@ -32,6 +40,10 @@ footer {
     font-size: 0.85rem;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: gold;
+}
+
 /*=========
 // Styles specific to the individual movie pages.
 ===========*/
@@ -41,11 +53,15 @@ footer {
         "swImg mInfo"
         "swImg mData";
     grid-template-columns: 25% 75%;
+    grid-template-rows: 40% 60%;
     background-color: grey;
     border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
-#dashboard div {
+#dashboard div,
+#dataBoard nav,
+#dataBoard #dataListContainer {
     background-color: white;
     border-radius: 0.25rem;
     margin: 0.25rem;
@@ -53,22 +69,41 @@ footer {
     color: black;
 }
 
-#dashboard div#moviePoster {
+#dashboard a:link, 
+#dashboard a:visited, 
+#dashboard a:hover, 
+#dashboard a:active {
+    color: black;
+}
+
+#moviePoster {
     grid-area: swImg;
     text-align: center;
 }
 
-#dashboard div#infoBoard {
+#moviePoster img {
+    width: 100%;
+}
+
+#infoBoard {
     grid-area: mInfo;
 }
 
-#dashboard div#dataBoard {
+#dashboard #dataBoard {
     grid-area: mData;
     display: grid;
     grid-template-columns: 25% 75%;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
 }
 
-#dataBoard #Characters {
-    display: block;
+#dashboard #dataBoard #dataListContainer div.dataList {
+    display: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    height: 200px;
 }
+
 

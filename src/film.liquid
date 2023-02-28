@@ -5,7 +5,8 @@ pagination:
     alias: film
     addAllPagesToCollections: true
 permalink: "films/starwars-ep_{{ film.episodeID | slugify }}/"
-title: Movie Dashboard
+eleventyComputed:
+  title: "{{ film.title }}"
 layout: base
 tags: filmPages
 ---
