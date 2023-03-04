@@ -14,13 +14,12 @@ After cloning the repository, installation consists of three steps:
 1. Create an API key at the [OMDB API](https://www.omdbapi.com/).
 
 2. In the root directory of your cloned repository, create a `.env` file:
-    touch .env
+        touch .env
 
 3. Add the following line to your `.env` file:
-    OMDB_API_KEY=<your omdb api key goes here>
 
-4. Create an API key at the [OMDB API](https://www.omdbapi.com/).
-v
+        OMDB_API_KEY=\<your omdb api key goes here\>
+
 
 ### Install the appropriate npm packages
 In the root directory of the cloned repository, install all the npm packages you need with the following command:
