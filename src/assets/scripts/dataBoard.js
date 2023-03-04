@@ -18,6 +18,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
             document.querySelectorAll('div.dataList').forEach(div => {
                 div.style.display = 'none';
             });
+            
             document.querySelector(`#${a.text}`).style.display = 'block';
         });
     });
