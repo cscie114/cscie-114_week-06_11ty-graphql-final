@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
             // Cycle through all the dataList objects and set their css 
             // 'display' property to 'none.' Set the anchor's
             // corresponding dataList object 'display' to 'block.'
+            // This is horribly inefficient and there must be a better way...
             document.querySelectorAll('div.dataList').forEach(div => {
                 div.style.display = 'none';
             });
