@@ -18,7 +18,7 @@ After cloning the repository, installation consists of three steps:
 
 3. Add the following line to your `.env` file:
 
-        OMDB_API_KEY=\<your omdb api key goes here\>
+        OMDB_API_KEY=<your omdb api key goes here>
 
 
 ### Install the appropriate npm packages
